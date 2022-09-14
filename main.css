@@ -1,0 +1,124 @@
+*{ /* Универсальный селектор, который выбирает все элементы на страницы. Можно использовать если необходимо указать какое то свойство для всех элементов на странице */
+    box-sizing: border-box; /* Не увеличивает размеры блока если указывать отступы, рамки и прочее. Вмещает контент в указанный размер блока изменяя размеры контента внутри блока. */
+}
+
+body{
+    margin: 0;  
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{ /* Класс "container" стилезуем вверху, так как это универсальный контейнер который не привязан  к определенному расположению на странице сайта, этот контейнер может использоваться и в шапке и в подвале, в него помещяем необходимый контент */
+    max-width: 1110px; /* Для мобильной адаптации, елс иразмер экрана будет меньше 1110, то контент сожмется, если размер экрана больше 1110 то ширина дойдет до 1110 и остановится */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Header */
+
+.header{
+    display: flex;
+    flex-direction: column; /* Выстраиваем Flex-элементы в колонку, основная ось - Y */
+
+    justify-content: center; /* Выравнивание по основной оси (т.к основная ось - Y, выравнивание по вертикали */
+    align-items: center; /* Выравнивание по поперечной оси ( поперечная ось - X, выранвивание по горизонтали */
+    position: relative;
+    width: 100%;
+    height: 100vh;
+
+    background-color: #536580;
+    background-image: url("img/header/header-bg.jpg");
+    background-size: cover;
+    background-position: center;
+    /* Определяем модель flex-box для блока .header */
+   }
+
+.header-title{
+    margin: 0;
+    margin-bottom: 25px;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 130%; /* можно написать 1.3, это множитель. 1.3 * 56 = 72.8 это будет высота строки.*/
+       
+    text-align: center;
+    
+    color: #FFFFFF;
+}
+
+.header-subtitle{
+    margin: 0;   
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+        
+    text-align: center;
+    letter-spacing: 0.2em; /* расстояние между буквами чуть больше чем стандартное*/
+    text-transform: uppercase; /* все буквы заглавные */
+    
+    color: #FFFFFF;
+}
+
+.header-arrow{
+    width: 48px;
+    height: 48px;
+    /* background-color: red; */
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    /* margin-left: -24px; */ /* смещение на половину ширины блока в лево, т.к значение выше  left: 50%; выравнивает по левому краю блока. Но это не совсем удобно так как нужно кореектировать это значение при изменении размеров блока */
+    transform: translate(-50%, 0); /* это смещение не привязано к размерам блока. В translate передаем 2 значения, смещение по оси X  и смещение по оси Y. В нашем случае нужно сместить влево на половину ширины блока, поэтому -50% */
+}
+
+/* Portfolio */
+
+.portfolio{
+    padding-top: 80px;
+    padding-bottom: 115px;
+}
+
+.portfolio-header{
+    margin: 0;
+    margin-bottom: 70px;
+    font-weight: 700;
+    font-size: 46px;
+    line-height: 130%;
+    text-align: center;
+    color: #000000;
+}
+
+.portfolio-cards-wrapper{
+    display: flex;
+    flex-wrap: wrap; /* Разрешаем перенос на следующую строчку в блоке */
+    justify-content: space-between; /* Выравнивает элементы по краям блока. Выравнивает элементы по основной оси (X, по горизонтали). space-between выравнивает первый и последний элемент по краям, свобоное пространство распределяя между ними */
+}
+
+.card{
+    padding: 20px;
+    margin-bottom: 30px;
+    background-color: white;
+    max-width: 540px;
+    box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+}
+
+.card:last-child, .card:nth-last-child(2) /* ВЫбирает элемент по номеру с конца */{ /* Обращаемся к классу card по псевдоселектору lact-child. Этот селектор выберет последнюю карточку в рамках контейнера, он выберет последний тег с классом card  врамках контейнера в котором он находится */
+    margin-bottom: 0; /* Убираем нижний отступ, так как он уже учтен в блоке portfolio */
+}
+
+.card-img{
+    margin-bottom: 20px;
+}
+
+.card-title{
+    margin: 0;
+    margin-bottom: 13px;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 130%;
+    color: #000000;
+}
+
+.card p{
+    margin: 0;
+    font-size: 16px;
+    line-height: 130%;
+    color: #000000;
+}

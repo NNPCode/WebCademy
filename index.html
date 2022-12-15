@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,64 +8,65 @@
     <link rel="stylesheet" href="main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
-    <header>
-    <div class="header">
 
-        <h1 class="header-title">Николай Панцырев</h1>    
+<body>
+    <header class="header">
+        <h1 class="header-title">Николай Панцырев</h1>
         <p class="header-subtitle">веб-разработчик, создание сайтов</p>
         <div class="header-arrow">
-           <img src="./img/header/chevron-down.svg" alt="Arrow">
+            <img src="./img/header/chevron-down.svg" alt="Arrow">
         </div>
-    </div>
     </header>
     <main>
-    <div class="portfolio">
-        <div class="container">
-            <h2 class="portfolio-header">Портфолио</h2>
-
-            <!-- portfolio-cards-wrapper -->
-            <div class="portfolio-cards-wrapper"> <!-- Оборачиваем карточки в разделе портфолио для использования flexbox модели  -->
-
-                <!-- Card -->
-            <div class="card">
-                <img class="card-img" src="./img/portfolio/forest.jpg" alt="Многостраничный сайт">
-                <h3 class="card-title">Многостроничный сайт</h3>
-                <p>Верстка многостраничного сайта</p>
+        <section class="portfolio">
+            <div class="container">
+                <h2 class="portfolio-header">Портфолио</h2>
+                <!-- portfolio-cards-wrapper -->
+                <div class="portfolio-cards-wrapper">
+                    <!-- Оборачиваем карточки в разделе портфолио для использования flexbox модели  -->
+                    <!-- Card -->
+                    <div class="card">
+                        <a href="./forest-travel.html" class="card-link">
+                            <img class="card-img" src="./img/portfolio/forest.jpg" alt="Многостраничный сайт">
+                            <h3 class="card-title">Многостроничный сайт</h3>
+                            <p>Верстка многостраничного сайта</p>
+                        </a>
+                    </div>
+                    <!-- // Card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <a href="#" class="card-link">
+                            <img class="card-img" src="./img/portfolio/unit.jpg" alt="Адаптивный лендинг">
+                            <h3 class="card-title">Адаптивный лендинг</h3>
+                            <p>Верстка многостраничного сайта</p>
+                        </a>
+                    </div>
+                    <!-- // Card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <a href="#" class="card-link">
+                            <img class="card-img" src="./img/portfolio/potfolio.jpg" alt="Личный сайт">
+                            <h3 class="card-title">Личный сайт</h3>
+                            <p>Верстка многостраничного сайта</p>
+                        </a>
+                    </div>
+                    <!-- // Card -->
+                    <!-- Card -->
+                    <div class="card">
+                        <a href="#" class="card-link">
+                            <img class="card-img" src="./img/portfolio/quantum.jpg" alt="Интернет магазин">
+                            <h3 class="card-title">Интернет магазин</h3>
+                            <p>Верстка многостраничного сайта</p>
+                        </a>
+                    </div>
+                    <!-- // Card -->
+                </div>
+                <!-- //portfolio-cards-wrapper -->
             </div>
-            <!-- // Card -->
-
-            <!-- Card -->
-            <div class="card">
-                <img class="card-img" src="./img/portfolio/unit.jpg" alt="Адаптивный лендинг">
-                <h3 class="card-title">Адаптивный лендинг</h3>
-                <p>Верстка многостраничного сайта</p>
-            </div>
-            <!-- // Card -->
-
-            <!-- Card -->
-            <div class="card">
-                <img class="card-img" src="./img/portfolio/potfolio.jpg" alt="Личный сайт">
-                <h3 class="card-title">Личный сайт</h3>
-                <p>Верстка многостраничного сайта</p>
-            </div>
-            <!-- // Card -->
-
-            <!-- Card -->
-            <div class="card">
-                <img class="card-img" src="./img/portfolio/quantum.jpg" alt="Интернет магазин">
-                <h3 class="card-title">Интернет магазин</h3>
-                <p>Верстка многостраничного сайта</p>
-            </div>
-            <!-- // Card -->
-
-            </div> 
-            <!-- //portfolio-cards-wrapper -->
-
-        </div>        
-    </div>
+        </section>
     </main>
     <footer>
         <div class="container">
@@ -83,21 +85,20 @@
                     <p>Мои профили в социальных сетях:</p>
                     <div class="footer-icons-row">
                         <a href="#">
-                            <img src="/img/icons/facebook.svg" alt="Facebook">
+                            <img src="./img/icons/facebook.svg" alt="Facebook">
                         </a>
                         <a href="https://vk.com/id21323072">
-                            <img src="/img/icons/vk.svg" alt="Vk">
+                            <img src="./img/icons/vk.svg" alt="Vk">
                         </a>
                         <a href="#">
-                            <img src="/img/icons/instagram.svg" alt="Instagram">
+                            <img src="./img/icons/instagram.svg" alt="Instagram">
                         </a>
                         <a href="#">
-                            <img src="/img/icons/github.svg" alt="Github">
+                            <img src="./img/icons/github.svg" alt="Github">
                         </a>
                     </div>
                 </div>
                 <!-- //footer-icons -->
-
                 <!-- footer-contacts -->
                 <div class="footer-contacts footer-col">
                     <a href="https://vk.com/id21323072" class="footer-button">
@@ -109,6 +110,5 @@
             </div>
         </div>
     </footer>
-
 </body>
 </html>

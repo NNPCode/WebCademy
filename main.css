@@ -95,11 +95,27 @@ body{
 }
 
 .card{
-    padding: 20px;
     margin-bottom: 30px;
     background-color: white;
     max-width: 540px;
     box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35);
+    transition: transform 0.2s ease-in;
+}
+
+.card:hover{
+    transform: translateY(-15px);
+}
+
+.card-link{
+    padding: 20px;
+    color:#000000;
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s ease-in;
+}
+
+.card-link:hover{
+    color:rgb(39,91,236);
 }
 
 .card:last-child, .card:nth-last-child(2) /* ВЫбирает элемент по номеру с конца */{ /* Обращаемся к классу card по псевдоселектору lact-child. Этот селектор выберет последнюю карточку в рамках контейнера, он выберет последний тег с классом card  врамках контейнера в котором он находится */
@@ -116,14 +132,12 @@ body{
     font-weight: 600;
     font-size: 24px;
     line-height: 130%;
-    color: #000000;
 }
 
 .card p{
     margin: 0;
     font-size: 16px;
     line-height: 130%;
-    color: #000000;
 }
 
 /* Footer */
@@ -214,18 +228,16 @@ footer{
 /* Project */
 
 .project{
-    padding-top: 80px;
-    padding-bottom: 120px;
+    padding: 80px 0 120px 0;
     text-align: center;
 }
 
-.project-title{
+.project-header{
+    margin: 0;
+    margin-bottom: 40px; 
     font-weight: 700;
     font-size: 46px;
-    line-height: 1.3;
-
-    margin: 0; /* Почему если не указать этот параметр появляется автоматический margin? */
-    margin-bottom: 40px;  
+    line-height: 1.3;   
 }
 
 .project-img{ 
@@ -234,7 +246,7 @@ footer{
 
 .project-description{
     max-width: 730px;
-    margin: 0px auto 60px auto;
+    margin: 0px auto 60px;
 }
 
 .project-description p{

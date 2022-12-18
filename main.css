@@ -2,18 +2,32 @@
     box-sizing: border-box; /* Не увеличивает размеры блока если указывать отступы, рамки и прочее. Вмещает контент в указанный размер блока изменяя размеры контента внутри блока. */
 }
 
+.none{
+    display: none !important; 
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
 body{
     margin: 0;  
     font-family: 'Montserrat', sans-serif;
     color: #000000;
 }
 
+img{
+    max-width: 100%;
+}
+
 .container{ /* Класс "container" стилезуем вверху, так как это универсальный контейнер который не привязан  к определенному расположению на странице сайта, 
     этот контейнер может использоваться и в шапке и в подвале, в него помещяем необходимый контент. Если в figmе нажать ctrl+shift+4 появится разметка страницы в виде линий, по ней можно понять на каких
      участках страницы можно использовать один и тот же контейнер. Если в main и footer контент занимает одинковое место по ширине, то можно использовать 1 класс контейнер */
-    max-width: 1110px; /* Для мобильной адаптации, елс иразмер экрана будет меньше 1110, то контент сожмется, если размер экрана больше 1110 то ширина дойдет до 1110 и остановится */
+    max-width: 1140px; /* Для мобильной адаптации, елс иразмер экрана будет меньше 1110, то контент сожмется, если размер экрана больше 1110 то ширина дойдет до 1110 и остановится */
     margin-left: auto;
     margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* Header */
@@ -28,8 +42,8 @@ body{
     width: 100%;
     height: 100vh;
 
-    background-color: #536580;
-    background-image: url("img/header/header-bg.jpg");
+    /* background-color: #536580;
+    /* background-image: url("img/header/header-bg.jpg");
     background-size: cover;
     background-position: center;
     /* Определяем модель flex-box для блока .header */
@@ -142,7 +156,7 @@ body{
 
 /* Footer */
 
-footer{
+.footer{
     background-color: #1E4776;
     padding-top: 45px;
     padding-bottom: 130px;
@@ -281,4 +295,3 @@ footer{
     background-color: #275BEC;
     color: white;
 }
-
